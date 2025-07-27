@@ -19,3 +19,9 @@ El proceso de entrenamiento consta de dos pasos principales:
    ```bash
    docker build -t sumo-rl-entrenamiento .
    docker run --rm -it sumo-rl-entrenamiento
+2. **Ejecución del script de entrenamiento**
+
+Dentro del contenedor o entorno preparado, se debe ejecutar el script principal. Este script utiliza una arquitectura de red neuronal convolucional (CNN) para procesar el estado del tráfico y entrenar al agente.[1]
+
+```bash
+python EntrenamientoCNN.py
